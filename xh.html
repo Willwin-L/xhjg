@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title>循环结构</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			//输出table标签
+			document.write('<table border="1" width="800">');
+			
+			
+			
+			//循环100个td
+			//循环变量
+			var tdNum=0;
+			
+			while(tdNum<100){
+				//循环的内容
+				//判断是否应该输出tr开始标签
+				if(tdNum%10==0){
+					//输出tr标签
+					document.write('<tr>');
+				}
+				//输出td标签
+				document.write('<td>'+tdNum+'</td>');	
+				
+				//判断是否应该输出tr结束标签
+				if(tdNum%10==9){
+					document.write('</tr>');
+				}
+				
+				
+				//自增自减
+				tdNum++;
+			}
+			
+			
+			
+		
+
+			
+			
+			
+			//输出table结束标签
+			document.write('</table>');
+		</script>
+	</body>
+</html>
